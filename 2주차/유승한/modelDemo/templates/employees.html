@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>직원 정보</title>
+</head>
+<body>
+    <h1>Employee List:</h1>
+    {% if employees %}
+    {% for emp in employees %}
+    <ol>
+        <li>이름 : {{emp.name}}</li>
+        <li>급여 : {{emp.salary}}</li>
+        <li>전화번호 : {{emp.phone_number}}</li>
+        <li>이메일 : {{emp.email}}</li>
+    </ol>   
+    {% endfor %}
+    {% else %}
+    <p>데이터가 없습니다</p>
+    {% endif %}
+</body>
+</html>
