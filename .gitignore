@@ -4,7 +4,8 @@
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -24,3 +25,8 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+
+3주차/유예지/3주차/movieProject/movieProject/settings.py
+3주차/박정우/movieProject/movieProject/settings.py
+3주차/김교휘/movieProject/movieProject/settings.py
