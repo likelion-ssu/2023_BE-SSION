@@ -20,6 +20,7 @@ from movieApp import views
 
 urlpatterns = [
     path('', views.MovieListView.as_view()),
-    path('<int:movie_id>/reviews/', views.CreateReview.as_view()),
-    path('<int:movie_id>/reviews/<int:review_id>/', views.MovieReviewDetailView.as_view()),
+    path('<int:id>/', views.MovieDetailView.as_view()),
+    path('<int:id>/reviews/', views.MovieReviewListView.as_view()),
+    path('<int:id>/reviews/<int:review_id>/', views.MovieReviewDetailView.as_view())
 ]

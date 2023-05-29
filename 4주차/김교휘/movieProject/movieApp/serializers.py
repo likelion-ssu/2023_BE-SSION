@@ -6,7 +6,7 @@ class MovieSerializer(serializers.Serializer):
         model=Movie
         fields="__all__"
 
-class ReviewSerializer(serializers.Serializer):
+class MovieReviewSerializer(serializers.Serializer):
     class Meta:
         movie=MovieSerializer(read_only=True)
         model=Review
